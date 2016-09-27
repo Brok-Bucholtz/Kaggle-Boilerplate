@@ -1,4 +1,5 @@
 from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
 
 
 def classifiers(model):
@@ -6,8 +7,11 @@ def classifiers(model):
         'random_forest': {
             'name': 'sklearn-random_forest_classifier',
             'model':  RandomForestClassifier,
-            'parameters': {}}
-    }
+            'parameters': {}},
+        'gradient_boosting': {
+            'name': 'xgboost-xgb_classifier',
+            'model': XGBClassifier,
+            'parameters': {}}}
 
     if model == 'all':
         return clfs.values()
