@@ -1,0 +1,1 @@
+This folder contains a history of all the submissions created
